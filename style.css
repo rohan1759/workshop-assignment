@@ -1,0 +1,202 @@
+*{
+    margin: 0%;
+}
+
+.divHeight{
+    height: 100vh;
+}
+
+#navbar{
+    background-color: #8d298b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+#navbar > span{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.847);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+
+}
+
+#navbar > ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbar > ul > li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+#firstDiv_2nd{
+    height: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./assets/6.jpg);
+    background-position: center;
+    box-sizing: border-box;
+    /* font-size: 4rem; */
+    font-family: fantasy;
+    /* text-align: start; */
+    margin: 0px auto;
+    padding: 0rem 28%;
+    color: rgb(255, 255, 255);
+}
+
+#firstDiv_2nd>p:first-child{
+    font-size: 2rem;
+}
+
+#firstDiv_2nd>p:nth-child(2){
+    font-size: 5rem;
+    width: 46vw;
+    font-family: monospace;
+    font-weight: 800;
+}
+
+.buttonTemp{
+    border: none;
+    border-radius: 2rem;
+    padding: 0.4rem 1.2rem;
+    /* margin-top: 0.2rem; */
+    background-color: #FF0F7B;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.buttonTemp> b{
+    font-size: 2rem;
+}
+
+/* 2nd div */
+
+.secondDiv{
+    background-color: #141531;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.secondDiv>div:first-child{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.secondDiv>div:first-child > span{
+    font-size: 4rem;
+    color: #FF0F7B;
+}
+
+.secondDiv>div:nth-child(2){
+    font-size: 2rem;
+    padding: 0rem 15rem;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.secondDiv>div:nth-child(3){
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Pixelify Sans', cursive;    
+    color: #FF0F7B;
+}
+
+/* 3rd div */
+
+.thirdDiv{
+    background-color: #141531;
+}
+
+.thirdDiv > iframe{
+    height: calc(100% - 30px);
+    width: calc(100% - 50px);
+    margin: 0px 1.5rem;
+}
+
+
+/* SAME STYLE */
+
+/* 4th div */
+
+.forthDiv{
+    display: flex;
+    background-color: #141531;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.forthDiv>img{
+    height: 500px;
+    width: 490px;
+}
+
+.forthDiv>div{
+    width: 28%;
+    height: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    color: white;
+}
+
+.forthDiv > div > p:first-child {
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FF0F7B;
+    line-height: 45px;
+}
+
+.forthDiv>div>p:nth-child(2){
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    line-height: 36px;
+}
+
+
+/* 7th div */
+
+.seventhDiv{
+    background-color: #141531;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.seventhDiv > div:first-child{
+    color: rgb(136, 167, 195);
+    font-size: 5rem;
+}
+
+.seventhDiv > div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seventhDiv > div div{
+    width: 12%;
+}
+
+.seventhDiv > div div>p:first-child{
+    color: #FF0F7B;
+    font-size: 1.1rem;
+    font-family: 'Pixelify Sans',cursive;
+}
+
+.seventhDiv > div div>p:nth-child(2){
+    font-size: 1rem;
+    line-height: 25px;
+}
