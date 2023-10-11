@@ -18,11 +18,11 @@
         <div id="navbar">
             <span>LOGO</span>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Reviews</li>
-                <li>Team</li>
-                <li>Contact</li>
+                <li><a href="#firstDiv_2nd">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div id="firstDiv_2nd">
@@ -47,7 +47,7 @@
     </div>
 
     <!-- 4th div -->
-    <div class="divHeight forthDiv">
+    <div class="divHeight forthDiv" id="about">
         <img src="./assets/1.jpg" alt="" srcset="">
         <!-- <div>
 
@@ -79,8 +79,14 @@
         </div>
     </div>
 
+    <!-- additional div (gallery) -->
+    <div class="divHeight galleryDiv">
+        <div>hello</div>
+    </div>
+
+
     <!-- 7th div -->
-    <div class="divHeight seventhDiv">
+    <div class="divHeight seventhDiv" id="reviews">
         <div>Game Reviews</div>
         <div>
             <div>
@@ -105,8 +111,8 @@
     </div>
 
     <!-- 8th div -->
-    <div>
-        <div>
+    <div class="divHeight eighthDiv" id="team">
+        <div id="teamDiv">
             <div>Teams</div>
             <div>
                 Most reports conclude with a page acknowledging the contributions of the
@@ -114,35 +120,34 @@
                 down the names of those committed to these projects, such as:
             </div>
         </div>
-        <div>
+        <div id="peoplesDiv">
             <div>
-                <img src="" alt="">
-                <p>ELLIOT STERLING
-                </p>
+                <img src="./assets/user1.png" alt=""  width="100px" height="100px">
+                <p>ELLIOT STERLING</p>
                 <p>CEO & Co-Founder</p>
                 <p>Add details in 1-2 sentences</p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="./assets/user2.png" alt=""  width="100px" height="100px">
                 <p>CARLY FERRIS</p>
                 <p>COO</p>
                 <p>Add details in 1-2 sentences</p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="./assets/user3.png" alt=""  width="100px" height="100px">
                 <p>INGRID CORREA</p>
                 <p>Marketing VP</p>
                 <p>Add details in 1-2 sentences</p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="./assets/user4.png" alt=""  width="100px" height="100px">
                 <p>YUHUI LIN
                 </p>
                 <p>Administration VP</p>
                 <p>Add details in 1-2 sentences</p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="./assets/user1.png" alt="" width="100px" height="100px">
                 <p>MURAD NASER</p>
                 <p>Sustainability Officer</p>
                 <p>Add details in 1-2 sentences</p>
@@ -151,34 +156,70 @@
     </div>
 
     <!-- 9th div -->
-    <div class="ninethDiv">
+    <div class="divHeight ninethDiv" id="contact">
         <div>Send us a message</div>
         <div>
             <p>123 Anywhere St., Any City Any State, Country (123) 456 7890</p>
             <p>hello@reallygreatsite.com </p>
+            <img src="./assets/social-media.png" alt="">
         </div>
     </div>
 
     <!-- tenthDiv -->
-    <div class="tenthDiv">
-        <div>
-            <form action="">
-                <label for="name">name</label>
-                <input type="text">
-                <label for="email">Email</label>
-                <input type="email">
-                <label for="message">message</label>
-                <input type="text">
-                <input type="submit">
-            </form>
+    <div class="divHeight tenthDiv">
+        <div id="tenthDiv_1stDiv">
+            <div id="contactForm">
+                <p>Contact Us</p>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text">
+                    <label for="email">Email</label>
+                    <input type="email">
+                    <label for="message">Message</label>
+                    <input type="text">
+                    <!-- <input type="submit"> -->
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div id="mapEmbed">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1837543.8741812191!2d85.80700585!3d25.9039195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1696910792935!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1837543.8741812191!2d85.80700585!3d25.9039195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1696910792935!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="tenthDiv_2ndDiv">
+            <div id="information">
+                <div>
+                    <img src="./assets/techLogo.png" alt="" width="150px" height="150px">
+                    <p>there are many variation of passages of lorem ipsum available, but the majority has suffered alternation in some form, by injected humour</p>
+                    <button>know more</button>
+                </div>
+                <div>
+                    <p>Office</p>
+                    <p>here are many variation of passages of lorem ipsum available</p>
+                    <p>+91-9999999999</p>
+                </div>
+                <div>
+                    <p>Links</p>
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#about">About</a></p>
+                    <p><a href="#">Service</a></p>
+                    <p><a href="#gallery">Gallery</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                </div>
+                <div>
+                    <p>Social icons</p>
+                    <div>
+                        <img src="./assets/linkedin_logo.png" alt="" width="30px" height="30px">
+                        <img src="./assets/instagram_logo.png" alt="" width="30px" height="30px">
+                        <img src="./assets/facebook_logo.png" alt="" width="30px" height="30px">
+                        <img src="./assets/YouTube_logo.png" alt="" width="30px" height="30px">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="tenthDiv_footer">
+                © Copyright 2023, All Right Reserved Technika.  
+            </div>
         </div>
-    </div>
-
-    <!-- footer -->
-    <div class="footer">
 
     </div>
 

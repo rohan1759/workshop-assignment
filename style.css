@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 *{
     margin: 0%;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.534);
+    text-decoration: underline;
 }
 
 .divHeight{
@@ -7,7 +23,7 @@
 }
 
 #navbar{
-    background-color: #8d298b;
+    background-color: #17143b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,22 +41,24 @@
 #navbar > ul {
     list-style: none;
     display: flex;
+    margin-right: 3rem;
 }
 
 #navbar > ul > li{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: monospace;
     padding: 1rem;
+    font-weight: 300;
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.76);
 }
 
 #firstDiv_2nd{
-    height: 36rem;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(./assets/6.jpg);
+    background-image: linear-gradient(to bottom, rgba(14, 28, 108, 0.52), rgba(14, 6, 49, 0.73)), url(./assets/background_1.jpg);
     background-position: center;
     box-sizing: border-box;
     /* font-size: 4rem; */
@@ -60,13 +78,13 @@
     width: 46vw;
     font-family: monospace;
     font-weight: 800;
+    margin-bottom: 1rem;
 }
 
 .buttonTemp{
     border: none;
     border-radius: 2rem;
     padding: 0.4rem 1.2rem;
-    /* margin-top: 0.2rem; */
     background-color: #FF0F7B;
     color: white;
     font-size: 1.6rem;
@@ -171,9 +189,10 @@
     background-color: #141531;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     color: white;
+    box-sizing: border-box;
 }
 
 .seventhDiv > div:first-child{
@@ -187,16 +206,283 @@
 }
 
 .seventhDiv > div div{
-    width: 12%;
+    width: 20%;
 }
 
 .seventhDiv > div div>p:first-child{
     color: #FF0F7B;
-    font-size: 1.1rem;
-    font-family: 'Pixelify Sans',cursive;
+    font-size: 2.6rem;
+    font-family: fantasy;
+    line-height: 42px;
+    margin-bottom: 1.6rem;
 }
 
 .seventhDiv > div div>p:nth-child(2){
-    font-size: 1rem;
-    line-height: 25px;
+    font-size: 1.4rem;
+    line-height: 36px;
+    padding-right: 2.8rem;
+}
+
+/* 8th div */
+
+.eighthDiv{
+    background-color: #141531;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+#teamDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#teamDiv>div:first-child{
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#teamDiv>div:nth-child(2){
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0rem 20rem;
+    text-align: center;
+    line-height: 26px;
+}
+
+#peoplesDiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#peoplesDiv>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+}
+
+#peoplesDiv>div>img{
+    width: 175px;
+    height: 175px;
+    margin-bottom: 0.8rem;
+}
+
+#peoplesDiv>div>p:nth-child(2){
+    color: #FF0F7B;
+}
+
+#peoplesDiv>div>p:nth-child(3){
+    margin-bottom: 0.5rem;
+}
+
+#peoplesDiv>div>p:nth-child(4){
+    text-wrap: wrap;
+    width: 50%;
+    text-align: center;
+}
+
+/* 9th div */
+
+.ninethDiv{
+    background-color: #141531;
+    background-image: linear-gradient(to bottom, rgba(43, 57, 136, 0.52), rgba(24, 19, 23, 0.73)),
+    url('./assets/background_2.jpg');
+    background-position: right;
+    background-color: #fff;
+    /* filter: brightness(0.3); */
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.ninethDiv>div:first-child{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 4rem;
+    align-self: flex-start;
+    padding: 6rem 6rem;
+}
+
+.ninethDiv>div:nth-child(2){  
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    align-self: flex-end;
+    padding: 6rem 3rem;
+}
+
+.ninethDiv>div:nth-child(2) > p:first-child{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    width: 65%;
+}
+.ninethDiv>div:nth-child(2) > p:nth-child(2){    
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #FF0F7B;
+}
+
+.ninethDiv>div:nth-child(2) > img{
+    width: 18vw;
+    height: 18vh;
+}
+
+/* 10th div */
+
+.tenthDiv{
+    background-color: #141531;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+}
+
+#tenthDiv_1stDiv{
+    display: flex;
+    height: 50%;
+}
+
+#contactForm{
+    flex: 2;
+    background-color: #444444;
+    padding: 0.5rem 1rem;
+    font-family: system-ui;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#contactForm > p{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+}
+
+#contactForm > form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm > form > label{
+    margin-bottom: 0.3rem;
+}
+
+#contactForm > form > input{
+    background-color: #666666;
+    outline: none;
+    border: none;
+    padding: 0.3rem 0.3rem;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    margin-bottom: 0.7rem;
+}
+
+#contactForm > form > input:nth-child(6){
+    height: 2.2rem;
+}
+
+#contactForm > form > button{
+    background-color: #555555;
+    border: none;
+    padding: 0.3rem;
+    border-radius: 4px;
+    color: white;
+}
+
+#contactForm > form > button:hover{
+    background-color: #3e3e3e;
+}
+
+#mapEmbed{
+    flex: 4;
+}
+
+/* 2nd div css */
+
+
+#tenthDiv_2ndDiv{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem 0.5rem 3rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.813), rgba(8, 7, 8, 0.73)),url(./assets/background_3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#information{
+    display: flex;
+}
+
+#information > div{
+    flex: 1;
+    margin: 0px 1.56rem;
+}
+
+#information > div:first-child > img{
+    width: 34%;
+    height: 40%;
+    margin: 0px 30% 0.6rem 30%;
+}
+#information > div:first-child > p{
+    font-size: 15px;
+    padding-right: 1.2rem;
+    line-height: 20px;
+    margin-bottom: 0.8rem;
+}
+#information > div:first-child > button{
+    background-color: transparent;
+    outline: none;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
+
+#information > div:nth-child(2) > p:first-child{
+    font-family: 'roboto';
+    margin-bottom: 1.5rem;
+}
+
+#information > div:nth-child(2) > p:nth-child(2){
+    margin-bottom: 1.5rem;
+    padding-right: 12rem;
+}
+
+#information > div:nth-child(3){
+    line-height: 26px;
+}
+
+#information > div:nth-child(3) > p:first-child{
+    font-family: 'roboto';
+    margin-bottom: 1.5rem;
+}
+
+#information > div:nth-child(4) > p:first-child{
+    font-family: 'roboto';
+    margin-bottom: 1.5rem;
+}
+
+
+#tenthDiv_2ndDiv > hr{
+    width: 90vw;
+    border: 1px solid #282828;
+}
+
+/* galleryDiv */
+
+.galleryDiv{
+    background-color: #63658d;
+    color: white;
 }
