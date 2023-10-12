@@ -483,6 +483,55 @@ a:hover{
 /* galleryDiv */
 
 .galleryDiv{
-    background-color: #63658d;
+    background-color:#141531;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.galleryDiv>div:first-child{
+    background-color: #6064bb;
+    color: white;
+    width: 85%;
+    height: calc(100% - 70px);
+    overflow: hidden;
+    position: relative;
+    /* display: flex; */
+}
+
+.galleryDiv > div:first-child >img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 600ms;
+}
+
+.galleryDiv > button:nth-child(2){
+    position: absolute;
+    color: white;
+    top: 41%;
+    left: 7.5%;
+    padding: 2rem 6px;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 8px 2px #3e3e3e;
+}
+
+.galleryDiv >  button:nth-child(3){
+    position: absolute;
+    color: white;
+    top: 41%;
+    right: 7.5%;
+    padding: 2rem 6px;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 8px 2px #3e3e3e;
+
 }

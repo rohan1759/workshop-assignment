@@ -8,11 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-
+    
     <!-- 1st div -->
     <div class="divHeight firstDiv">
         <div id="navbar">
@@ -31,7 +30,7 @@
             <button class="buttonTemp">SHOP NOW <b>&#x27B2;</b></button>
         </div>
     </div>
-
+    
     <!-- 2nd div -->
     <div class="divHeight secondDiv">
         <div>Shop at <span>Abvent</span></div>
@@ -58,7 +57,7 @@
             <button class="buttonTemp">SEE MORE <b>&#x27B2;</b></button>
         </div>
     </div>
-
+    
     <!-- 5th div -->
     <div class="divHeight forthDiv">
         <img src="./assets/2.jpg" alt="">
@@ -78,13 +77,22 @@
             <button class="buttonTemp">SEE MORE <b>&#x27B2;</b></button>
         </div>
     </div>
-
+    
     <!-- additional div (gallery) -->
-    <div class="divHeight galleryDiv">
-        <div>hello</div>
+    <div class="divHeight galleryDiv" id="gallery">
+        <div>
+            <img src="./assets/gallery_1.jpg" class="slide" alt="">
+            <img src="./assets/gallery_2.jpg" class="slide" alt="">
+            <img src="./assets/gallery_3.jpg" class="slide" alt="">
+            <img src="./assets/gallery_4.jpg" class="slide" alt="">
+            <img src="./assets/gallery_5.png" class="slide" alt="">
+            <img src="./assets/gallery_6.jpg" class="slide" alt="">
+        </div>
+        <button onclick="goPrev()">&#5130;</button>
+        <button onclick="goNext()">&#5125;</button>
     </div>
-
-
+    
+    
     <!-- 7th div -->
     <div class="divHeight seventhDiv" id="reviews">
         <div>Game Reviews</div>
@@ -164,7 +172,7 @@
             <img src="./assets/social-media.png" alt="">
         </div>
     </div>
-
+    
     <!-- tenthDiv -->
     <div class="divHeight tenthDiv">
         <div id="tenthDiv_1stDiv">
@@ -223,5 +231,6 @@
 
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
